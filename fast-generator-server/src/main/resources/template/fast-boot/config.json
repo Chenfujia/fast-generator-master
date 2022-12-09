@@ -1,0 +1,62 @@
+{
+  "project": {
+    "packageName": "net.maku",
+    "version": "1.0.0",
+    "backendPath": "D:\\generator\\fast-boot\\fast-server",
+    "frontendPath": "D:\\generator\\fast-admin"
+  },
+  "developer": {
+    "author": "阿沐",
+    "email": "babamu@126.com"
+  },
+  "templates": [
+    {
+      "templateName": "Controller.java.ftl",
+      "generatorPath": "${backendPath}/src/main/java/${packagePath}/${moduleName!}/controller/${subModuleName!}/${ClassName}Controller.java"
+    },
+    {
+      "templateName": "Service.java.ftl",
+      "generatorPath": "${backendPath}/src/main/java/${packagePath}/${moduleName!}/service/${subModuleName!}/${ClassName}Service.java"
+    },
+    {
+      "templateName": "Manager.java.ftl",
+      "generatorPath": "${backendPath}/src/main/java/${packagePath}/${moduleName!}/service/impl/${subModuleName!}/${ClassName}Manager.java"
+    },
+    {
+      "templateName": "Query.java.ftl",
+      "generatorPath": "${backendPath}/src/main/java/${packagePath}/${moduleName!}/query/${subModuleName!}/${ClassName}Query.java"
+    },
+    {
+      "templateName": "DTO.java.ftl",
+      "generatorPath": "${backendPath}/src/main/java/${packagePath}/${moduleName!}/entity/${subModuleName!}/${ClassName}DTO.java"
+    },
+    {
+      "templateName": "DO.java.ftl",
+      "generatorPath": "${backendPath}/src/main/java/${packagePath}/${moduleName!}/vo/${subModuleName!}/${ClassName}DO.java"
+    },
+    {
+      "templateName": "Convert.java.ftl",
+      "generatorPath": "${backendPath}/src/main/java/${packagePath}/${moduleName!}/convert/${subModuleName!}/${ClassName}Convert.java"
+    },
+    {
+      "templateName": "Dao.java.ftl",
+      "generatorPath": "${backendPath}/src/main/java/${packagePath}/${moduleName!}/dao/${subModuleName!}/${ClassName}Dao.java"
+    },
+    {
+      "templateName": "Dao.xml.ftl",
+      "generatorPath": "${backendPath}/src/main/resources/mapper/${moduleName!}/${ClassName}Dao.xml"
+    },
+    {
+      "templateName": "mysql.sql.ftl",
+      "generatorPath": "${backendPath}/mysql.sql"
+    },
+    {
+      "templateName": "index.vue.ftl",
+      "generatorPath": "${frontendPath}/src/views/${moduleName!}/${classname}/index.vue"
+    },
+    {
+      "templateName": "add-or-update.vue.ftl",
+      "generatorPath": "${frontendPath}/src/views/${moduleName!}/${classname}/add-or-update.vue"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://rm-uf6b2bla94rzx4d91to.mysql.rds.aliyuncs.com:3306/pinma_msx?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+      username: digital_cfj
+      password: Cfj_Msx2117
+
+
+
+# 需要指定对应的模板
+fast:
+  template: fast-boot
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  typeAliasesPackage: net.maku.generator.entity
+  global-config:
+    db-config:
+      id-type: AUTO
+    banner: false
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    call-setters-on-nulls: true
